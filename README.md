@@ -30,4 +30,3 @@
 1. Johnnie Simpson - https://github.com/balokdecoy
 2. Young Ji Kim - https://github.com/youjmi
 3. Frankie Rosado - https://github.com/Franciscorosado09
-   > > > > > > > 5f5dec1b94db250a6d236b2663a9199a0cb3f6cb
