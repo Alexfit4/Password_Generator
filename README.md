@@ -2,6 +2,7 @@
 
 - A website that can help you generate a random password.
 - https://github.com/Alexfit4/Password_Generator
+- https://alexfit4.github.io/Password_Generator/
 
 ### Password Generator Scren Shot
 
