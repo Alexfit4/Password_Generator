@@ -1,4 +1,5 @@
 // Assignment Code
+// "use strict";
 var generateBtn = document.querySelector("#generate");
 
 var numbers = "123456789";
@@ -19,7 +20,8 @@ function generatePassword(
 ) {
 	let password = "";
 	let selection = ["upper", "lower", "number", "special"];
-	while (password.length < Length) {
+	var counter = 0;
+	while (counter < Length) {
 		char = selection[getRandom(4)];
 		if (hasUpperCase && char == "upper") {
 			password += upperCase[getRandom(26)];
@@ -33,6 +35,8 @@ function generatePassword(
 		if (hasSpecial && char == "special") {
 			password += specialChar[getRandom(11)];
 		}
+
+		counter++;
 	}
 
 	return password;
@@ -58,6 +62,16 @@ function writePassword() {
 
 	var specChar = confirm("Would you like to include special character?");
 	console.log(specChar);
+
+	if (
+		specChar === false &&
+		lowerCase === false &&
+		upperCase === false &&
+		includeNumbers === false
+	) {
+		alert("Choose at least one password element");
+		return;
+	}
 
 	var password = generatePassword(
 		passwordLength,
